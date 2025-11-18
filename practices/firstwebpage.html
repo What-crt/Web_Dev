@@ -4,11 +4,33 @@
     <head>
         <title>My favorite bands!</title>
         <meta charset="UTF-8">
+          <style>
+            div{
+                height: 400px;
+                width: 400px;
+                text-align: center
+            }
+            #title{
+                background-color: rgb(112, 110, 77);
+                color: rgb(179, 164, 133);
+                border: solid 5px rgba(37, 37, 36, 0.836);
+                border-width: 10px;
+                text-align: center;
+            }
+             #info-1{
+                background-color: rgb(110, 149, 160);
+                color: rgb(75, 73, 61);
+             }
+             #info-2{
+                background-color: rgb(110, 149, 160);
+                color: rgba(75, 73, 61);
+             }
+        </style>
     </head>
     <body>
-        <h1>Who is in the band and when and where did they start?</h1>
-        <h2>By. Mykel Allan</h2>
-        <p>
+        <h1 id="title">Who is in the band and when and where did they start?</h1>
+        <h2 id="sub-heading">By. Mykel Allan</h2>
+        <p id="info-1">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQvB7QtoQAcFQfimZXY_AOhtTL8pV2Sv29A&s" alt="Picture of Twenty One Pilots" height="200px"/><br>
             <strong>-TWENTY ONE PILOTS</strong><br>
             Members: Tyler Joseph and Josh Dun<br>
@@ -41,7 +63,7 @@
         </p>
         
         <h1>List of most popular songs from each band and one fun fact:</h1>
-        <p><strong>-TWENTY ONE PILOTS </Strong><br>
+        <p id="info-2"><strong>-TWENTY ONE PILOTS </Strong><br>
             Popular songs: Heathens, Stressed Out, and Ride<br>
             Fun Fact:Twenty One Pilots got their name from the Arthur Miller play "All My Sons," which is about a man who knowingly sends out faulty airplane parts, leading to the deaths of 21 pilots.<br>
             <a href="https://en.wikipedia.org/wiki/Twenty_One_Pilots" target="_blank">Wikipedia page to Twenty one pilots</a><br><br>
@@ -70,7 +92,7 @@
             Fun Fact: Adam Young created Owl City in 2007 in his Owatonna, Minnesota basement to deal with insomnia caused by his job as a Coca-Cola truck loader. <br>
             <a href="https://en.wikipedia.org/wiki/Owl_City" target="_blank">Wikipedia page to Owl City </a><br><br>
             <h1>My favorite of their songs:</h1>
-            <ul>
+            <ul id="list">
                 <li><strong>Twenty One Pilots</strong> - Tear in My Heart, Oldies Station, Shy Away</li>
                 <li><strong>Forrest Frank</strong> - Never Get Used To This, sunrise, Jesus is coming Back soon</li>
                 <li><strong>Josiah Queen</strong> - Dusty Bibles, The prodigal, Garden in Manhattan</li>
