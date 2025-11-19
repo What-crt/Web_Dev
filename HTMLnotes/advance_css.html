@@ -1,0 +1,57 @@
+<!---MA 6th Advanced css notes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 150px;
+            width: auto;
+        }
+        #left{
+            width: 50vw;
+            margin: 3px;
+        }
+        #right{
+            width: 50vw;
+            margin: 3px;
+        }
+        #content-wrapper{
+            display: grid;
+            grid-template-colums: 25% 75%;
+        }
+        button{
+            margin: 50px;
+            Padding: 50px;
+        }
+        #one-wrapper{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        p{
+            font-family:cursive;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: bold;
+            font-variant:small-caps;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+    <button>Click Me</button>
+    <div id= "content-wrapper"></div>
+    <div id="left">
+        <p>Lorem ipsum dolor sit amet, omnes putant virtute ius no, soluta appetere ea sed, cum affert verear cotidieque ei. Vix at omnes ignota offendit, recteque iudicabit at cum, sed eros nobis tritani ei. Tation suscipit convenire eos id, an quando commodo scriptorem mel. Case sapientem cu eum. Pri oratio propriae ex. Odio duis deleniti vix ea, vim mucius officiis suscipiantur at. Eu per nusquam petentium, et duo mollis utroque blandit.</p>
+    </div>
+    <div id="right">
+        <div id="one-wrapper"></div>
+        <img alt="Puppy!" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ixq01Gf9jajLj6SFVPCD_Jj1e5uubDrhw&s">
+        <img alt="Foxes!" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6lUWKClIVDg15n6cXyz66K4zptuqG9X2CGA&s">
+        <img alt="Sunset!" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwPU4BrzR_fbNiovmbgIzUq6WNY64JkRKo1A&s">
+    </div>
+</body>
+</html>
