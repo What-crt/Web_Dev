@@ -5,110 +5,167 @@
         <title>My favorite bands!</title>
         <meta charset="UTF-8">
           <style>
-            div{
-                height: 400px;
-                width: 400px;
-                text-align: center;
+            body{
+                margin: 0;
+                padding: 20px;
+                background-color: rgb(179, 164, 133);
+                font-family: Arial, sans-serif;
             }
             #title{
                 background-color: rgb(112, 110, 77);
                 color: rgb(179, 164, 133);
                 border: solid 5px rgba(37, 37, 36, 0.836);
-                border-width: 10px;
+                padding: 20px;
                 text-align: center;
             }
-             #info-1{
+             #sub-heading{
+                text-align: center;
+                margin: 30px;
+             }
+             .two-sections{
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 30px;
+             }
+             .band-grid, .info-1 {
+                width: 45%;
+             }
+             .band-grid{
                 background-color: rgb(110, 149, 160);
                 color: rgb(77, 73, 54);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
              }
-             #info-2{
+             .band-card{
                 background-color: rgb(110, 149, 160);
                 color: rgb(77, 73, 54);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
              }
-             #list{
-                background-color: rgb(110, 149, 160);
-                color: rgb(77, 73, 54);
-             }
-             img{
-                width: 300px;
+             .band-card img{
+                width: 250px;
                 height: auto;
+                margin-bottom: 10px;
+                border-radius: 10px;
              }
+                #info-1{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    background-color: rgb(110, 149, 160);
+                    padding: 20px;
+                    border-radius: 10px;
+                    color: rgb(37, 37, 36);
+                }
+                #list{
+                    background-color: rgb(110, 149, 160);
+                    padding: 20px;
+                    border-radius: 10px;
+                    color: rgb(37, 37, 36);
+                    margin-top: 20px
+                }
+
         </style>
     </head>
     <body>
         <h1 id="title">Who is in the band and when and where did they start?</h1>
         <h2 id="sub-heading">By. Mykel Allan</h2>
-        <p id="info-1">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJARAWJ5BhUSMstM1OuUOTJyWgLbbCXhLbyw&s" alt="Picture of Twenty One Pilots"/><br>
-            <strong>-TWENTY ONE PILOTS</strong><br>
-            Members: Tyler Joseph and Josh Dun<br>
-            started in 2009 in Columbus, Ohio<br><br>
-            <img src="https://i.scdn.co/image/ab6761610000e5ebfc23429951b765040e928baf" alt="Picture of Forest Frank"/><br>
-            <strong>-FORREST FRANK</strong><br>
-            Member: Forrest Frank<br>
-            started in 2017 in Fulshear, Texas<br><br>
-            <img src="https://jeffroberts.com/wp-content/uploads/2023/08/1-1-380x380.png" alt="Picture of Josiah Queen"/><br>
-            <strong>-JOSIAH QUEEN</strong><br>
-            Member: Josiah Queen<br>
-            started in 2020 in New Port Richey, Florida<br><br>
-            <img src="https://www.sierraclub.org/sites/default/files/styles/sierra_full_page_width/public/sierra/articles/big/2015-9-Enjoy-Artifact-Okee-Dokee-brothers-WB.jpg.webp?itok=USJvzR9v" alt="Picture of Okee Dokee brothers"/><br>
-            <strong>-THE OKEE DOKEE BROTHERS</strong><br>
-            Members: Joe Mailander and Justin Lansing<br>
-            Started in 2005 in Minneapolis, Minnesota<br><br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCkyNGlpC43rDZ8cIsMWJynFMg1TuBryd4Jdl1MVraoUmpQPRj2vViL83Gktrmnp1femhVJj2xUSA8txt3VN9_yCCot5sEDs5uvUHMN1qp8Q&s=10" alt="Picture of Rayne"/><br>
-            <strong>-RAYNES</strong><br>
-            Members: Mark Race, Mat Charley, and Joe Berger<br>
-            Started in 2017 in Los Angles, California<br><br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_k8d4TtxOJF8n6vpk5JyFc0H3Qt0g85tl-o1G84Ne5YwBVCaF44u7YbB9GJ60Q_UJbHQ&usqp=CAU" alt="Picture of Imagine Dragons"/><br>
-            <strong>-IMAGINE DRAGONS</strong><br>
-            Members: Dan Reynolds, Wayne Sermon, Ben McKee, and Daniel Platzman<br>
-            Started in 2008 in Las Vegas, Nevada<br><br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2f38-Fi8VsY9SHkFzlbI8hfB6p9We1r4Ppw&s" alt="Picture of Owl City"/><br>
-            <strong>-OWL CITY</strong><br>
-            Member: Adam Young<br>
-            Started in 2007 in Owatonna, Minnesota<br><br>
+        <div class=" two-sections">
+            <div class="band-grid">
+                <div class="band-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJARAWJ5BhUSMstM1OuUOTJyWgLbbCXhLbyw&s" alt="Picture of Twenty One Pilots"/><br>
+                    <strong>-TWENTY ONE PILOTS</strong><br>
+                    Members: Tyler Joseph and Josh Dun<br>
+                    started in 2009 in Columbus, Ohio<br><br>
+                </div>
+                <div class="band-card">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebfc23429951b765040e928baf" alt="Picture of Forest Frank"/><br>
+                    <strong>-FORREST FRANK</strong><br>
+                    Member: Forrest Frank<br>
+                    started in 2017 in Fulshear, Texas<br><br>
+                </div>
+                <div class="band-card">
+                    <img src="https://jeffroberts.com/wp-content/uploads/2023/08/1-1-380x380.png" alt="Picture of Josiah Queen"/><br>
+                    <strong>-JOSIAH QUEEN</strong><br>
+                    Member: Josiah Queen<br>
+                    started in 2020 in New Port Richey, Florida<br><br>
+                </div>
+                <div class="band-card">
+                    <img src="https://www.sierraclub.org/sites/default/files/styles/sierra_full_page_width/public/sierra/articles/big/2015-9-Enjoy-Artifact-Okee-Dokee-brothers-WB.jpg.webp?itok=USJvzR9v" alt="Picture of Okee Dokee brothers"/><br>
+                    <strong>-THE OKEE DOKEE BROTHERS</strong><br>
+                    Members: Joe Mailander and Justin Lansing<br>
+                    Started in 2005 in Minneapolis, Minnesota<br><br>
+                </div>
+                <div class="band-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCkyNGlpC43rDZ8cIsMWJynFMg1TuBryd4Jdl1MVraoUmpQPRj2vViL83Gktrmnp1femhVJj2xUSA8txt3VN9_yCCot5sEDs5uvUHMN1qp8Q&s=10" alt="Picture of Rayne"/><br>
+                    <strong>-RAYNES</strong><br>
+                    Members: Mark Race, Mat Charley, and Joe Berger<br>
+                    Started in 2017 in Los Angles, California<br><br>
+                </div>
+                <div class="band-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_k8d4TtxOJF8n6vpk5JyFc0H3Qt0g85tl-o1G84Ne5YwBVCaF44u7YbB9GJ60Q_UJbHQ&usqp=CAU" alt="Picture of Imagine Dragons"/><br>
+                    <strong>-IMAGINE DRAGONS</strong><br>
+                    Members: Dan Reynolds, Wayne Sermon, Ben McKee, and Daniel Platzman<br>
+                    Started in 2008 in Las Vegas, Nevada<br><br>
+                </div>
+                <div class="band-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2f38-Fi8VsY9SHkFzlbI8hfB6p9We1r4Ppw&s" alt="Picture of Owl City"/><br>
+                    <strong>-OWL CITY</strong><br>
+                    Member: Adam Young<br>
+                    Started in 2007 in Owatonna, Minnesota<br><br>
+                </div>
+            </div>
 
-        </p>
-        
-        <h1>List of most popular songs from each band and one fun fact:</h1>
-        <p id="info-2"><strong>-TWENTY ONE PILOTS </Strong><br>
-            Popular songs: Heathens, Stressed Out, and Ride<br>
-            Fun Fact:Twenty One Pilots got their name from the Arthur Miller play "All My Sons," which is about a man who knowingly sends out faulty airplane parts, leading to the deaths of 21 pilots.<br>
-            <a href="https://en.wikipedia.org/wiki/Twenty_One_Pilots" target="_blank">Wikipedia page to Twenty one pilots</a><br><br>
-            <strong>-FORREST FRANK</strong><br>
-            Popular songs: UP, GOOD DAY, and GOD IS GOOD<br>
-            Fun Fact: Forrest Frank not only has his own band but also is a member of the band Surfaces with Colin Padalecki.<br>
-            <a href="https://en.wikipedia.org/wiki/Forrest_Frank" target="_blank">Wikipedia page to Forest Frank </a><br><br>
-            <strong>-JOSIAH QUEEN</strong><br>
-            Popular songs: The Prodigal, Dusty Bibles, and I am Barabbas<br>
-            Fun Fact: Before his music career took off, he worked as a church janitor and car wash attendant. He began writing songs at age nine, was a nominee for New Artist of the Year at the 2024 GMA Dove Awards, and his debut album, The Prodigal, reached #1 on the Billboard Top Christian Albums chart.<br>
-            <a href="https://www.josiahqueen.com/" target="_blank">Josiah Queen website </a><br><br>
-            <strong>-THE OKEE DOKEE BROTHERS</strong><br>
-            Popular songs: Can You Canoe?, Hope Machine, and Roll On River<br>
-            Fun Fact: The Okee Dokee Brothers won a Grammy Award for Best Children's Album in 2013 for their album "Can You Canoe?"<br>
-            <a href="https://en.wikipedia.org/wiki/The_Okee_Dokee_Brothers" target="_blank">Wikipedia page to Okee Dokee brothers </a><br><br>
-            <strong>-RAYNES</strong><br>
-            Popular songs: Cast the Bronse, Lemon Drop, and Marigolds<br>
-            Fun Fact: Mark Race got a tattoo of his flight number to the U.S. to commemorate the moment he joined the band, making the transatlantic connection a permanent part of their story.<br>
-            <a href="https://en.wikipedia.org/wiki/Raynes_(band)" target="_blank">Wikipedia page to Raynes</a><br><br>
-            <strong>-IMAGINE DRAGONS</strong><br>
-            Popular songs: Believer, Bones, and Enemy<br>
-            Fun Fact: The band's name, "Imagine Dragons," is an anagram, though the original phrase has never been officially revealed.<br>
-            <a href="https://en.wikipedia.org/wiki/Imagine_Dragons" target="_blank">Wikipedia page to Imagine Dragons</a><br><br>
-            <strong>-OWL CITY</strong><br>
-            Popular songs: Fireflies, Vanilla Twilight, and Good Time<br>
-            Fun Fact: Adam Young created Owl City in 2007 in his Owatonna, Minnesota basement to deal with insomnia caused by his job as a Coca-Cola truck loader. <br>
-            <a href="https://en.wikipedia.org/wiki/Owl_City" target="_blank">Wikipedia page to Owl City </a><br><br>
-            <h1>My favorite of their songs:</h1>
-            <ul id="list">
-                <li><strong>Twenty One Pilots</strong> - Tear in My Heart, Oldies Station, Shy Away</li>
-                <li><strong>Forrest Frank</strong> - Never Get Used To This, sunrise, Jesus is coming Back soon</li>
-                <li><strong>Josiah Queen</strong> - Dusty Bibles, The prodigal, Garden in Manhattan</li>
-                <li><strong>The Okee Dokee Brothers</strong> - Through the Woods, The life that's in You, Evergreen</li>
-                <li><strong>Raynes</strong> - Cast the Bronze, Lemon Drop, Come My Way</li>
-                <li><strong>Imagine Dragons</strong> - On Top of The World, West Coast, I bet My Life</li>
-                <li><strong>Owl City</strong> - Fireflies, Vanilla Twilight, To the Sky</li>
-            </ul>
-        </p>
+            <div class="info-1">
+                <p><strong>-TWENTY ONE PILOTS </Strong><br>
+                Popular songs: Heathens, Stressed Out, and Ride<br>
+                Fun Fact:Twenty One Pilots got their name from the Arthur Miller play "All My Sons," which is about a man who knowingly sends out faulty airplane parts, leading to the deaths of 21 pilots.<br>
+                <a href="https://en.wikipedia.org/wiki/Twenty_One_Pilots" target="_blank">Wikipedia page to Twenty one pilots</a><br></p>
+
+                <p><strong>-FORREST FRANK</strong><br>
+                Popular songs: UP, GOOD DAY, and GOD IS GOOD<br>
+                Fun Fact: Forrest Frank not only has his own band but also is a member of the band Surfaces with Colin Padalecki.<br>
+                <a href="https://en.wikipedia.org/wiki/Forrest_Frank" target="_blank">Wikipedia page to Forest Frank </a><br></p>
+
+                <p><strong>-JOSIAH QUEEN</strong><br>
+                Popular songs: The Prodigal, Dusty Bibles, and I am Barabbas<br>
+                Fun Fact: Before his music career took off, he worked as a church janitor and car wash attendant. He began writing songs at age nine, was a nominee for New Artist of the Year at the 2024 GMA Dove Awards, and his debut album, The Prodigal, reached #1 on the Billboard Top Christian Albums chart.<br>
+                <a href="https://www.josiahqueen.com/" target="_blank">Josiah Queen website </a><br></p>
+
+                <p><strong>-THE OKEE DOKEE BROTHERS</strong><br>
+                Popular songs: Can You Canoe?, Hope Machine, and Roll On River<br>
+                Fun Fact: The Okee Dokee Brothers won a Grammy Award for Best Children's Album in 2013 for their album "Can You Canoe?"<br>
+                <a href="https://en.wikipedia.org/wiki/The_Okee_Dokee_Brothers" target="_blank">Wikipedia page to Okee Dokee brothers </a><br></p>
+
+                <p><strong>-RAYNES</strong><br>
+                Popular songs: Cast the Bronse, Lemon Drop, and Marigolds<br>
+                Fun Fact: Mark Race got a tattoo of his flight number to the U.S. to commemorate the moment he joined the band, making the transatlantic connection a permanent part of their story.<br>
+                <a href="https://en.wikipedia.org/wiki/Raynes_(band)" target="_blank">Wikipedia page to Raynes</a><br></p>
+
+                <p><strong>-IMAGINE DRAGONS</strong><br>
+                Popular songs: Believer, Bones, and Enemy<br>
+                Fun Fact: The band's name, "Imagine Dragons," is an anagram, though the original phrase has never been officially revealed.<br>
+                <a href="https://en.wikipedia.org/wiki/Imagine_Dragons" target="_blank">Wikipedia page to Imagine Dragons</a><br></p>
+
+                <p><strong>-OWL CITY</strong><br>
+                Popular songs: Fireflies, Vanilla Twilight, and Good Time<br>
+                Fun Fact: Adam Young created Owl City in 2007 in his Owatonna, Minnesota basement to deal with insomnia caused by his job as a Coca-Cola truck loader. <br>
+                <a href="https://en.wikipedia.org/wiki/Owl_City" target="_blank">Wikipedia page to Owl City </a><br><br></p>
+                    <h1>My favorite of their songs:</h1>
+                <ul id="list">
+                    <li><strong>Twenty One Pilots</strong> - Tear in My Heart, Oldies Station, Shy Away</li>
+                    <li><strong>Forrest Frank</strong> - Never Get Used To This, sunrise, Jesus is coming Back soon</li>
+                    <li><strong>Josiah Queen</strong> - Dusty Bibles, The prodigal, Garden in Manhattan</li>
+                    <li><strong>The Okee Dokee Brothers</strong> - Through the Woods, The life that's in You, Evergreen</li>
+                    <li><strong>Raynes</strong> - Cast the Bronze, Lemon Drop, Come My Way</li>
+                    <li><strong>Imagine Dragons</strong> - On Top of The World, West Coast, I bet My Life</li>
+                    <li><strong>Owl City</strong> - Fireflies, Vanilla Twilight, To the Sky</li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
