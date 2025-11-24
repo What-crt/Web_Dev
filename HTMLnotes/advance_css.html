@@ -37,20 +37,39 @@
             font-weight: bold;
             font-variant:small-caps;
         }
+        #hidden{
+            display: none;
+        }
     </style>
+    <script>
+        showing = "none"
+        function show(){
+            if(showing == "none"){
+                document.getElementById("hidden").style.display = "block"
+                showing= "block"
+                document.getElementById("button").innerHTML = "Show Less"
+            }else{
+                document.getElementById("hidden").style.display = "none"
+                document.getElementById("button").innerHTML = "Show More"
+            }
+        }
+        function change(){
+             document.getElementById("three").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ixq01Gf9jajLj6SFVPCD_Jj1e5uubDrhw&s"
+        }
+    </script>
 </head>
 <body>
     <h1>Title</h1>
-    <button>Click Me</button>
+    <button id="button" onclick={Show()}>Show More</button>
     <div id= "content-wrapper"></div>
-    <div id="left">
+    <div id="hidden">
         <p>Lorem ipsum dolor sit amet, omnes putant virtute ius no, soluta appetere ea sed, cum affert verear cotidieque ei. Vix at omnes ignota offendit, recteque iudicabit at cum, sed eros nobis tritani ei. Tation suscipit convenire eos id, an quando commodo scriptorem mel. Case sapientem cu eum. Pri oratio propriae ex. Odio duis deleniti vix ea, vim mucius officiis suscipiantur at. Eu per nusquam petentium, et duo mollis utroque blandit.</p>
     </div>
     <div id="right">
         <div id="one-wrapper"></div>
         <img alt="Puppy!" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ixq01Gf9jajLj6SFVPCD_Jj1e5uubDrhw&s">
         <img alt="Foxes!" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6lUWKClIVDg15n6cXyz66K4zptuqG9X2CGA&s">
-        <img alt="Sunset!" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwPU4BrzR_fbNiovmbgIzUq6WNY64JkRKo1A&s">
+        <img alt="Sunset!" id="three" onmouseover={change()} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwPU4BrzR_fbNiovmbgIzUq6WNY64JkRKo1A&s">
     </div>
 </body>
 </html>
