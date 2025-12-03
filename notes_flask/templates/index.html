@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        img{
-            height: 200px;
-            width: auto;
-        }
-    </style>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}Hone- Flask{% endblock %}
+
+{% block body %}
     <h1>Welcome to my first flask site!</h1>
     <form method="POST">
             <label for="name">Enter your name</label>
-            <input type="text" name="name" placeholder="What is your name?">
+            <input type="text" name="name" 
+            placeholder="What is your name?">
             <input type="submit" value="submit">
     </form>
-    <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-116467250/116467250.jpg" alt="New Zealand">
-</body>
-</html>
+    <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-116467250/116467250.jpg" alt="Christmas">
+    <img src="https://www.kingofchristmas.com/cdn/shop/files/TribecaSpruce_9435ba0f-6c63-4ca1-97ab-5e2cdca47270.jpg?v=1722014341" alt="Christmas">
+{% endblock %}
