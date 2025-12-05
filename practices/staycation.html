@@ -4,21 +4,67 @@
     <head>
         <title>Zion</title>
         <meta charset="UTF-8">
+        <style>
+            img{
+                height: 300px;
+                width: auto;
+                margin-bottom: 10px;
+                border-radius: 10px;
+            }
+            #title{
+                background-color: rgb(112, 110, 77);
+                color: rgb(179, 164, 133);
+                border: solid 5px rgba(37, 37, 36, 0.836);
+                padding: 20px;
+                text-align: center;
+            }
+            body{
+                margin: 0;
+                padding: 20px;
+                background-color: rgb(179, 164, 133);
+                font-family: Arial, sans-serif;
+            }
+            #sub-heading{
+                text-align: center;
+                margin: 30px;
+             }
+            .info-1 .info1-pic{
+                width: 45%;
+            }
+            .info-2{
+
+            }
+            .info{
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 30px;
+            }
+
+        </style>
     </head>
     <body>
-        <h1>Zion National Park</h1>
-        <h2>Why Zion?</h2>
-        <p>Zion is a national park and is known for its tall mountians and beautiful scenery. It is one of the most popular visting spots in utah. It is great for visiting because of its stunning scenery, activities, and opportunities for adventure!</p>
-        <h2>Reasons to go zion:</h2>
-        <ul>
-            <li><strong>Hiking/Backpacking</strong> The Narrows(a river hike), Angels Landing(permit required for the chained sections), Scout Lookout, Emerald Pools, Canyon Overlook, Watchman trail, West tim and East Rim Trail, and La Verkin Creek Trail</li>
-            <li><strong>Canyoneering</strong></li>
-            <li><strong>Bike Trails</strong></li>
-            <li><strong>Horseback Riding</strong></li>
-            <li><strong>Camping</strong></li>
-            <li><strong>Waterfalls</strong></li>
-            <li><strong>Scenic Drive</strong></li>
-        <img src="https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg" alt="Zion park"/>
-        <img src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/zion/zion-national-park_the-narrows_istock.jpg" alt="Zion park"/>
-        <img src="https://www.treehugger.com/thmb/Gr_aPNB7p69fQtbq3OlPMPSF1OY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-855540888-7c739c9cd47a45f1839c3b6aa026e699.jpg" alt="Zion park"/>
+        <div class="info">
+            <h1 id="title">Zion National Park</h1>
+            <div class="info-1">
+                <h2 id="sub-heading">Why Zion?</h2>
+                <p>Zion is a national park and is known for its tall mountians and beautiful scenery. It is one of the most popular visting spots in utah. It is great for visiting because of its stunning scenery, activities, and opportunities for adventure!</p>
+            </div>
+            <div class="info1-pic">    
+                <img src="https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg" alt="Zion park"/>
+            </div>
+            <div class="info-2">
+                <h2 id="sub-heading">What can you do?</h2>
+                <ul>
+                    <li><strong>Hiking/Backpacking</strong> -The Narrows, Angels Landing, Scout Lookout, Canyon Overlook, Watchman trail, and La Verkin Creek Trail</li>
+                    <li><strong>Canyoneering</strong> -Pine Creek, keyhole Canyon, Ladder Canyon, and Imlay Canyon.</li>
+                    <li><strong>Horseback Riding</strong> -Hop Valley Trail, Sawmill rim Trail, Telephone Canyon Trail, and Cable Mountain trail.</li>
+                    <li><strong>Camping</strong> -Zion Canyon Campgroud and RV Resort, Watchman Campground, Lava Point Campground.</li>
+                    <li><strong>Waterfalls</strong> -Emerald Pools, Weeping Rock, Temple of Sinawava, and Archangel Falls.</li>
+                <img src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/zion/zion-national-park_the-narrows_istock.jpg" alt="Zion park"/>
+                <img src="https://www.treehugger.com/thmb/Gr_aPNB7p69fQtbq3OlPMPSF1OY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-855540888-7c739c9cd47a45f1839c3b6aa026e699.jpg" alt="Zion park"/>
+            </div>
+        </div>
     </body>
+</html>
