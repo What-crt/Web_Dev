@@ -8,9 +8,9 @@ def home():
             return redirect(url_for("user", name=request.form["name"]))
         return render_template("index.html")
 
-@app.route("/contact")
-def contact():
-      return "<p>Don't contact me. I dont want to talk to you<p>"
+@app.route("/rules")
+def rules():
+      return render_template("rules.html")
 
 @app.route("/<name>")
 def user(name):

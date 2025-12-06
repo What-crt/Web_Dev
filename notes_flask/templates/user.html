@@ -1,7 +1,33 @@
 {% extends "base.html" %}
-{% block content %}Home- Flask{% endblock %}
+{% block content %}About- Zion{% endblock %}
 
 {% block body %}
-    <h1>user Page</h1>
-    <p>Hello {name}</p>
+   <h2>What can you do?</h2>
+                <ul>
+                    <li><strong>Hiking/Backpacking</strong> -The Narrows, Angels Landing, Scout Lookout, Canyon Overlook, Watchman trail, and La Verkin Creek Trail</li>
+                    <li><strong>Canyoneering</strong> -Pine Creek, keyhole Canyon, Ladder Canyon, and Imlay Canyon.</li>
+                    <li><strong>Horseback Riding</strong> -Hop Valley Trail, Sawmill rim Trail, Telephone Canyon Trail, and Cable Mountain trail.</li>
+                    <li><strong>Camping</strong> -Zion Canyon Campgroud and RV Resort, Watchman Campground, Lava Point Campground.</li>
+                    <li><strong>Waterfalls</strong> -Emerald Pools, Weeping Rock, Temple of Sinawava, and Archangel Falls.</li>
+                </ul>
+                 <div id="tostay" style="display: none;">
+                    <p>
+                        <strong>Places to Stay:</strong> There are several lodging options within Zion National Park, including the Zion Lodge, which offers comfortable rooms and cabins. Additionally, there are campgrounds such as Watchman Campground and South Campground for those who prefer a more rustic experience. For more luxurious accommodations, there are hotels and resorts in nearby Springdale that provide stunning views of the park.
+                    </p>
+                </div>
+                <button id="button" onclick="toggleContent()">Places to stay!</button>
+            </div>
+             <script>
+            function toggleContent() {
+                var box = document.getElementById("tostay");
+                var btn = document.getElementById("button");
+                if (box.style.display === "none") {
+                    box.style.display = "block";
+                    btn.textContent = "Hide";
+                } else {
+                    box.style.display = "none";
+                    btn.textContent = "Places to stay!";
+                }
+            }
+        </script>
 {% endblock %}
